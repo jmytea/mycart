@@ -1,0 +1,13 @@
+.scroll-view{
+  overflow: hidden;
+  .pull-down{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: red;
+  }
+}

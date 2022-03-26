@@ -1,0 +1,45 @@
+#home-root{
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    bottom: 0;
+  }
+  .banner{
+    img{
+      width: 100%;
+    }
+  }
+  .cate{
+    display: flex;
+    flex-wrap: wrap;
+    .cate-item{
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img{
+        width: 80%;
+        display: block;
+      }
+    }
+  }
+  .new-goods{
+    display: flex;
+    flex-wrap: wrap;
+    .new-goods-item{
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      img{
+        background-color: #ddd;
+        width: 80%;
+        display: block;
+      }
+    }
+  }
+}

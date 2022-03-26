@@ -1,0 +1,21 @@
+.app-search-bar{
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1PX solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .input{
+    background-color: #ddd;
+    width: 92%;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 14px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

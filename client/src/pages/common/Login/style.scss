@@ -1,0 +1,25 @@
+#login{
+  .tel, .code{
+    width: 90%;
+    height: 32px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1PX solid #ddd;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .send, .confirm{
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    background-color: #fff;
+    &.disable{
+      background-color: #ddd;
+    }
+    img{
+      width: 16px;
+    }
+  }
+
+}

@@ -1,0 +1,213 @@
+#detail{
+  .back-btn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .detail-scroll{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    .banner{
+      width: 100%;
+      position: relative;
+      .info{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        z-index: 10;
+        background-color: #fff;
+        padding: 2px;
+        border-radius: 2px;
+        border: 1PX solid #ddd;
+        font-size: 12px;
+      }
+      .play-icon{
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        z-index: 10;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .content{
+      img{
+        display: block;
+      }
+    }
+  }
+  .tab-wrap{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: #fff;
+    border-top: 1PX solid #ddd;
+    .login-cover{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      z-index: 10;
+    }
+  }
+  .tab{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 40px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+    align-items: center;
+    .icon{
+      width: 32px;
+      height: 32px;
+      img{
+        width: 100%;
+      }
+    }
+    .btn{
+      width: 100px;
+      height: 32px;
+      border: 1PX solid #ddd;
+      border-radius: 16px;
+      text-align: center;
+      line-height: 32px;
+    }
+  }
+  .detail-panel{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 0;
+      width: 100%;
+      background: rgba($color: #000000, $alpha: 0.6);
+      z-index: 10;
+      .cover{
+        width: 100%;
+        height: 100%;
+      }
+      .close-btn{
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        font-size: 14px;
+        padding: 4px;
+        transform: translateY(10px);
+        z-index: 10;
+      }
+      .panel-wrap{
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        width: 100%;
+        height: 60%;
+        background-color: #fff;
+        .top{
+          display: flex;
+          padding: 15px;
+          .top-img{
+            img{
+              background-color: #efefef;
+              width: 90px;
+              height: 90px;
+            }
+          }
+          .top-info{
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            p:first-of-type{
+              color: #f00;
+              span:last-of-type{
+                color: #999;
+                text-decoration: line-through;
+              }
+            }
+          }
+        }
+        .sku-bar{
+          .sku-list{
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .sku-item{
+            padding: 4px;
+            border-radius: 2px;
+            border: 1px solid #333;
+            margin: 5px;
+            color: #333;
+            &.active{
+              color: red;
+              border: 1px solid red;
+            }
+          }
+        }
+        .count-bar{
+          padding: 10px;
+          display: flex;
+          font-size: 14px;
+          span{
+            display: block;
+            padding: 10px;
+            background: #fff;
+            border: 1PX solid #333;
+            &.disable{
+              border: 1PX solid #ddd;
+            }
+            &:first-of-type{
+              border-right: none;
+            }
+            &:last-of-type{
+              border-left: none;
+            }
+          }
+          input{
+            background: #fff;
+            border: 1PX solid #333;
+            font-size: 14px;
+            width: 80px;
+            text-align: center;
+            line-height: 40px;
+          }
+        }
+      
+      }
+  }
+
+}
+
+.play-wrap, .player{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: relative;
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .player-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    // height: 100px;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,49 @@
+#category-root{
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+  }
+  .menu{
+    width: 100px;
+    height: 100%;
+    .menu-item{
+      padding: 20px 0;
+      border-bottom: 1PX solid #ddd;
+      text-align: center;
+      &.active{
+        color: red;
+      }
+    }
+  }
+  .list{
+    flex: 1;
+    position: relative;
+    .list-title{
+      font-size: 20px;
+      font-weight: bold;
+      color: red;
+    }
+    .list-sub-title{
+      font-size: 16px;
+      font-weight: normal;
+      color: #666;
+    }
+    .list-content{
+      display: flex;
+      flex-wrap: wrap;
+      .item{
+        width: 50%;
+        .item-title{
+          font-size: 16px;
+        }
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
